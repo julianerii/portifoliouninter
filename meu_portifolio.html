@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Digital Uninter</title>
+<!-- edição do corpo -->
+    <style>
+        body { 
+            margin: 0; 
+            padding: 5px;
+            font-family: helvetica;
+            background-color: #e2bbc56e;
+        }
+
+        .container { 
+            display: grid;
+        }
+/* edição do cabeçalho */
+        header { 
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:#B13655;
+            border-radius: 15px;
+        }
+/* edição do menu link */
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* Centraliza o MENU  */
+            gap: 20px;
+            margin: 0 auto;
+            padding: 10px;
+            text-decoration: none;
+        }
+/* edição e efeito na imagem */
+        .imagem_um {
+            padding: 60px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        img:hover{
+            box-shadow: 0px 0px 20px #B13655;
+        }
+/* edição no texto */
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: justify;
+            max-width: 70%;
+        }
+/*Aumentei a fonte para da ênfase no texto  */
+        section p{
+            font-weight: 700;
+            font-size: 15px;
+        }
+/* rodapé */
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #B13655;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            
+        }
+/* links, efeitos e edição */
+        ul {
+            color: #33292C;
+        }
+
+        a, a:link {
+            padding: 8px 16px;
+            border: solid #332A2C 1px; 
+            text-decoration: none;   
+            color: #33292C;
+        }
+
+        li{
+        display: inline-block;
+        }
+
+        a:hover {
+            background-color:#db1f4e7d;
+            color: rgb(20, 22, 20);
+            box-shadow: 0px 0px 6px #33292C;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: whitesmoke; text-align: center; padding-top: 10px; font-weight: 900; font-size: 2rem;">Portifólio Digital</h1>
+        <br>
+    </header>
+<!-- links do menu -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Curiosidades</a></li>
+            <li><a href="minha_formacao.html">Formação</a></li>
+            <li><a href="meu_portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<!-- imagem e texto -->
+    <div class="container wrapper">
+        <aside class="imagem_um">
+            <img width="300px" src="Foto.jpg">
+        </aside>
+        <section class="principal">
+            <br><br>
+            <h1>
+                Meu Portifólio
+            </h1>
+            <p>Ainda estou desenvolvendo o meu portifólio para o público, tanto aqui, quanto em demais sites, como Linkedin e Github. Não possuo nenhum projeto próprio ou para fins educacionais para serem publicados.</p>
+            <br><br>
+        </section>
+    </div>
+
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+
+</body>
+</html>

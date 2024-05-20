@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Digital Uninter</title>
+
+    <style>
+/* corpo do site editado */
+        body { 
+            margin: 0; 
+            padding: 5px;
+            font-family: helvetica;
+            background-color: #e2bbc56e;
+        }
+
+        .container { 
+            display: grid;
+        }
+/* edição do cabeçalho */
+        header { 
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:#B13655;
+            border-radius: 15px;
+        }
+/* edição do menu */
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* Centraliza o MENU  */
+            gap: 20px;
+            margin: 0 auto;
+            padding: 10px;
+            text-decoration: none;
+        }
+/* edição do texto principal para o contato */
+        .principal_form h1 {
+           text-align: center;
+           margin-top: 65px;
+           color: #33292C;
+           font-size: 2rem;
+        }
+/* inicio da edição do formulário */
+        form{
+            gap: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 15px 5%;
+            max-width: 500px;
+            margin: 0 auto;
+            justify-content: center;
+        }
+/* area de texto com tamanho fixo */
+        textarea{
+            resize: none;
+        }
+/* edição do formulário visualmente */
+        form input, form textarea{
+            background-color: #b1365570;
+            padding: 15px;
+            color: #0f0e0e;
+            outline: 0;
+            border: 0;
+        }
+/* edição e alinhar o botão */
+        .botao_enviar {
+            text-align: center;
+        }
+
+        .botao_enviar input{
+            color: #070707;
+            font-weight: 500;
+            cursor: pointer;
+        }
+/* efeito no botão */
+        .botao_enviar input:hover{
+            box-shadow: 0px 0px 6px #33292C ;
+        }
+/* rodapé */
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #B13655;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            margin-top: 200px;
+        }
+/* links do menu */
+        ul {
+            color: #33292C;
+        }
+
+        a, a:link {
+            padding: 8px 16px;
+            border: solid #332A2C 1px; 
+            text-decoration: none;   
+            color: #33292C;
+        }
+
+        li{
+        display: inline-block;
+        }
+
+        a:hover {
+            background-color:#db1f4e7d;
+            color: rgb(20, 22, 20);
+            box-shadow: 0px 0px 6px #33292C;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: whitesmoke; text-align: center; padding-top: 10px; font-weight: 900; font-size: 2rem;">Portifólio Digital</h1>
+        <br>
+    </header>
+<!-- links do menu -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Curiosidades</a></li>
+            <li><a href="minha_formacao.html">Formação</a></li>
+            <li><a href="meu_portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<!-- seção do formulário -->
+    <section class="principal_form">  
+        <h1>Dúvida? Entre em contato:</h1>
+        <form>
+            <input type="text" name="" id="" placeholder="Nome">
+            <input type="text" name="" id="" placeholder="Telefone">
+            <input type="text" name="" id="" placeholder="E-mail">
+            <textarea name="" id="" placeholder="Digite aqui a sua dúvida:"></textarea>
+<!-- div para o botão enviar -->
+            <div class="botao_enviar"><input type="submit" value="Enviar"></div>
+        </form>
+    </section>
+
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+
+</body>
+</html>

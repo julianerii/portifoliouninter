@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Digital Uninter</title>
+<!-- style corpo -->
+    <style>
+        body { 
+            margin: 0; 
+            padding: 5px;
+            font-family: helvetica;
+            background-color: #e2bbc56e;
+        }
+
+        .container { 
+            display: grid;
+        }
+/* cabeçalho */
+        header { 
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:#B13655;
+            border-radius: 15px;
+        }
+/* menu de link */
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center; /* Centraliza o MENU  */
+            gap: 20px;
+            margin: 0 auto;
+            padding: 10px;
+            text-decoration: none;
+        }
+/* minha foto */
+        .imagem_um {
+            padding: 60px;
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+/* efeito na foto */
+        img:hover{
+            box-shadow: 0px 0px 20px #B13655;
+        }
+/* texto principal */
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 50px;
+            padding-right: 50px;
+            text-align: justify;
+            max-width: 70%;
+        }
+/* style no rodapé */
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #B13655;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+            
+        }
+/* edição e style dos links */
+        ul {
+            color: #33292C;
+        }
+
+        a, a:link {
+            padding: 8px 16px;
+            border: solid #332A2C 1px; 
+            text-decoration: none;   
+            color: #33292C;
+        }
+
+        li{
+        display: inline-block;
+        }
+
+        a:hover {
+            background-color:#db1f4e7d;
+            color: rgb(20, 22, 20);
+            box-shadow: 0px 0px 6px #33292C;
+        }
+    </style>
+
+</head>
+<body>
+    <header class="container">
+        <h1 style="color: whitesmoke; text-align: center; padding-top: 10px; font-weight: 900; font-size: 2rem;">Portifólio Digital</h1>
+        <br>
+    </header>
+<!-- links -->
+    <nav class="container menu">
+        <ul>
+            <li><a href="index.html">Curiosidades</a></li>
+            <li><a href="minha_formacao.html">Formação</a></li>
+            <li><a href="meu_portifolio.html">Portifólio</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+<!-- imagem e texto -->
+    <div class="container wrapper">
+        <aside class="imagem_um">
+            <img width="300px" src="Foto.jpg">
+        </aside>
+        <section class="principal">
+            <br><br>
+            <h1>
+                Minha Formação
+            </h1>
+            <p> Atualmente estou cursando Análise e desenvolvimento de sistemas na Uninter. Também tenho cursos de adminsitração, conhecimento em office e informática, fora experiência básica através de cursos na área de sistemas, como Python, Power BI, SQL e sistemas ERP</p>
+
+            <p>Estou cursando também inglês, e fazendo cursos com foco em Power BI para especialização.</p>
+            <br><br>
+        </section>
+    </div>
+
+    <footer class="container">
+        <h1>Desenvolvido para fins educacionais</h1>
+    </footer>
+
+</body>
+</html>
